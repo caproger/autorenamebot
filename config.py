@@ -3,20 +3,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "26202455")
+    API_HASH  = os.environ.get("API_HASH", "bd5e4bb84ebe0eb5bfe546ba97e46dc0")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6868611133:AAFT6FlPoNH1cVeiHsVkhZdI8tapedzRZ4A") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","madflixbotz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","cm")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://cmrenamer:cmrenamer@cluster0.ulrzs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/4b306f4b15c23a8f22e58.jpg")
+    START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/37a10de948de7d8a9b6bb.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002199007868"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
@@ -53,9 +53,8 @@ Use These Keywords To Setup Custom File Name
 <b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
 <b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
 <b>📢 Channel :</b> <a href='https://t.me/Madflix_Bots'>Madflix Botz</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/CallAdminRobot'>Jishu Developer</a>
-    
-<b>♻️ Bot Made By :</b> @Madflix_Bots"""
+<b>🧑‍💻 Owner :</b> <a href='https://t.me/RogersBro'>Rogers</a>
+"""
 
     
     THUMBNAIL_TXT = """<b><u>🖼️  HOW TO SET THUMBNAIL</u></b>
